@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Archivo Black", sans-serif;
+}
+
+a{
+    all: unset;
+}
+
+ul li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: coral;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: palegoldenrod;
+    border-radius: 10px;
+}
+
+.header {
+    padding: 25px 12%;
+    background-color: coral;
+    color: khaki;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    font-family: "Patua One", serif;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav.navbar ul {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+nav.navbar ul li {
+    cursor: pointer;
+}
+
+nav.navbar ul li a:hover {
+    color: gold;
+
+}
+
+nav.navbar ul li a {
+    transition: .3s;
+}
+
+main.home {
+    width: 100%;
+    min-height: 100vh;
+    background-color: lightyellow;
+    display: flex;
+    gap: 7rem;
+    padding: 30px 12% 0;
+    align-items: center;
+}
+
+.homeContent h4 {
+    font-size: 45px;
+}
+
+.homeContent h2 {
+    font-size: 65px;
+    line-height: 1.3;
+}
+
+.homeContent h2 span {
+    color: darkorange;
+}
+
+.homeContent p {
+    font-size: 25px;
+    margin: 25px 0 30px;
+}
+
+.contactBtn button {
+    width: 200px;
+    border-radius: 30px;
+    outline: none;
+    background-color: coral;
+    border: none;
+    color: blanchedalmond;
+    padding: 15px 0;cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    transition: .3s;
+    animation: moveBtn 1s infinite;
+}
+
+.contactBtn button:hover {
+    opacity: 1;
+}
+
+@keyframes moveBtn {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale:1.05;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+.homeImg img {
+    width: 250px;
+    height: 600px;
+    border-radius: 20px;
+    filter: drop-shadow(1px 1px 15px coral);
+}
+
+section.about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: coral;
+    display: flex;
+    gap: 7rem;
+    padding: 30px 12% 0;
+    align-items: center;
+}
+
+.aboutContent h4 {
+    font-size: 45px;
+}
+
+.aboutContent h2 {
+    font-size: 65px;
+    line-height: 1.3;
+}
+
+.aboutContent h4 span {
+    color: blanchedalmond;
+}
+
+.aboutImg img {
+    width: 400px;
+    height: 600px;
+    border-radius: 50px;
+    filter: drop-shadow(1px 1px 15px orangered);
+}
+
+section.projects {
+    padding: 8% 12% 13%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: lightyellow;
+    position: relative;
+}
+
+section.projects .headingTitle {
+    position: absolute;
+    top: 20px;
+    font-size: 55px;
+    color: rgba(255, 69, 0, 0.47)
+}
+
+.projectCards {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.projectCards .projectCard {
+    background-color: bisque;
+    border-radius: 15px;
+    max-width: 435px;
+    padding: 10px;
+    transition: .3s;
+}
+
+.projectCards .projectCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 5px coral;
+}
+
+.projectCards .projectCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.projectCards .projectCard h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    transition: .3s;
+}
+
+.projectCards .projectCard:hover  h3{
+    color: orangered;
+}
+
+.projectCards .projectCard p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+}
+
+.projectLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectLink .bxl-github {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.projectLink .liveDemo {
+    color: orangered;
+    cursor: pointer;
+}
+
+section.contact {
+    text-align: center;
+    background-color: coral;
+    font-size: 20px;
+}
+
+section.contact .headingTitle {
+    font-size: 50px;
+    color: khaki;
+    margin-bottom: 100px;
+    position: relative;
+    top: 40px;
+}
+
+section.contact form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto 0;
+    max-width: 50em;
+    text-align: center;
+}
+
+section.contact form .inputBox input,
+section.contact form textarea {
+    width: 80%;
+    padding: 1.5em;
+    font-size: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+}
+
+section.contact .sendBtn {
+    margin-bottom: 40px;
+}
+
+section.contact .sendBtn input {
+    width: 200px;
+    border-radius: 30px;
+    outline: none;
+    background-color: blanchedalmond;
+    border: none;
+    color: coral;
+    padding: 15px 0;cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+section.contact .sendBtn input:hover {
+    opacity: 1;
+}
+
+footer.footer {
+    padding: 0 10%;
+    background-color: bisque;
+    color: orangered;
+    width: 100%;
+}
+
+footer.footer p {
+    text-align: center;
+    padding: 5px 0;
+}
+
+
